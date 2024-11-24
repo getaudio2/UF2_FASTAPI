@@ -17,4 +17,7 @@ Això ens demanarà un body on l'atribut "imatges" del model Item serà un array
 Fent servir schema, podem validar l'estructura de dades dels users, per no tenir problemes al procesar-lo amb el model en fastapi.
 ![alt text](captura4.png)
 ![alt text](captura5.png)
-
+## Prova amb Postman
+El mateix codi d'abans, però modificant l'estructura del proyecte i organitzant els arxius en directoris segons la seva funció.
+Podem veure que amb Python 3.10 fácilment podem refactoritzar els imports amb `from nom_directori.nom_arxiu import nom_funció`.
+![alt text](captura6.png)
