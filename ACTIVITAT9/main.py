@@ -1,7 +1,7 @@
 from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field, HttpUrl
-from users_schema import users_schema
-from read_users import read_all
+from schemas.users_schema import users_schema
+from crud.read_users import read_all
 
 app = FastAPI()
 
