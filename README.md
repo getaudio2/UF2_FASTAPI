@@ -13,3 +13,8 @@ A més de fer servir tipus primitius com atributs d'un model, podem servir un al
 Això ens demanarà un body on l'atribut "imatges" del model Item serà un array [] amb objectes Imatge. Cada imatge haurà de tenir els seus atributs dins de "{}".
 ![alt text](captura2.png)
 ![alt text](captura3.png)
+## Prova de conexió a la BBDD creada a PostgreSQL pgadmin
+Fent servir schema, podem validar l'estructura de dades dels users, per no tenir problemes al procesar-lo amb el model en fastapi.
+![alt text](captura4.png)
+![alt text](captura5.png)
+
