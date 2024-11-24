@@ -7,11 +7,10 @@ def create_connection():
         conn = pg.connect(
             database="postgres",
             user='admin',
-            password='1234',
+            password='admin',
             host='localhost',
             port='5432'
         )
-
         return conn
     except(Exception, pg.Error) as error:
         print("Error: ", error)

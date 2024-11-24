@@ -1,7 +1,7 @@
 from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field, HttpUrl
-import users_schema
-import read_users
+from users_schema import users_schema
+from read_users import read_all
 
 app = FastAPI()
 
@@ -12,6 +12,6 @@ class Item(BaseModel):
     email: str
 
 
-@app.get("/users/")
+@app.get("/users", response_model=list[dict])
 async def read_users():
-    return users_schema.users_schema(read_users.read_all())
+    return users_schema(read_all())

@@ -5,12 +5,12 @@ services:
     container_name: db
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=1234
+      - POSTGRES_PASSWORD=admin
       - POSTGRES_USER=admin
     ports:
       - "5432:5432"
     volumes:
-      - local_pgdata:/var/lib/postresql/data
+      - local_pgdata:/var/lib/postgresql/data
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin4
