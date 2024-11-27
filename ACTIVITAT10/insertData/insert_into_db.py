@@ -1,5 +1,6 @@
 import pandas as pd
-import connection
+from db_connect import connection
+
 
 def insert_data_csv_to_db(pos, data):
     conn = connection.create_connection()
@@ -16,7 +17,7 @@ def insert_data_csv_to_db(pos, data):
 
     return {"Message":"Data inserted correctly"}
 
-df = pd.read_csv("paraules_tematica_penjat.csv")
+df = pd.read_csv("../paraules_tematica_penjat.csv")
 d = df.to_dict(orient='list')
 
 for i in range(500):

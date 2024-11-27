@@ -1,4 +1,5 @@
-import connection
+from db_connect import connection
+
 
 def read_themes():
     conn = connection.create_connection()
