@@ -19,9 +19,12 @@ valor `["WORD"]` fa referència a la columna word `{ WORD: ['Software', ...] }`,
 ## Llistar els themes i una paraula aleatoria segons el theme amb endpoints de FastAPI
 Un cop tenim les WORDS i THEMES a la database podem configurar els endpoints.
 El primer endpoint ("/penjat/tematica/opcions") trucarà a una funció que realitza la consulta sql per rebre els THEMES.
+
 ![cap5](cap5.png)
+![cap6](cap6.png)
+
 Distinct agafarà els valors únics de THEMES per no repetir.
-Un cop tenim els themes, farem un schema per renderitzar(donar un format) aquests valors seguint l'estructura:
+Un cop tenim els themes, farem un schema per renderitzar(donar un format) a aquests valors seguint l'estructura:
 ```
 [
   {
@@ -41,6 +44,11 @@ Un cop tenim els themes, farem un schema per renderitzar(donar un format) aquest
   }
 ]
 ```
+
+![cap7](cap7.png)
+
+Es tracta d'un array de diccionaris amb un sol key-value per diccionari.
+<br />
 Farem quasi el mateix amb l'altre endpoint ("penjat/tematica{option}"). Aquest rebrà un paràmetre option, que serà el nom del theme,
 i l'utilitzarem a la consulta sql amb `WHERE = %s;` per rebre les paraules que pertanyen a aquest theme.
 Es podria fer un SELECT que retornés una paraula i l'agafariem amb fetchone() en lloc de fetchall(). Aquesta seria una altra
