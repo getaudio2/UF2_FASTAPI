@@ -47,10 +47,13 @@ Un cop tenim els themes, farem un schema per renderitzar(donar un format) a aque
 
 ![cap7](cap7.png)
 
-Es tracta d'un array de diccionaris amb un sol key-value per diccionari.
+Es tracta d'una llista de diccionaris amb un sol key-value per diccionari.
+
 <br />
 Farem quasi el mateix amb l'altre endpoint ("penjat/tematica{option}"). Aquest rebrà un paràmetre option, que serà el nom del theme,
 i l'utilitzarem a la consulta sql amb `WHERE = %s;` per rebre les paraules que pertanyen a aquest theme.
 Es podria fer un SELECT que retornés una paraula i l'agafariem amb fetchone() en lloc de fetchall(). Aquesta seria una altra
 opció viable, però aqui he optat per deixar al propi script python fer la selecció de la paraula aleatoria amb randint(0,99) a l'array
 que ens retorna fetchall().
+
+![cap8](cap8.png)
