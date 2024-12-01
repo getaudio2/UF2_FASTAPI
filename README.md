@@ -57,3 +57,9 @@ opció viable, però aqui he optat per deixar al propi script python fer la sele
 que ens retorna fetchall().
 
 ![cap8](cap8.png)
+
+### Resultats al Swagger:
+
+![cap9](cap9.png)
+
+![cap10](cap10.png)
