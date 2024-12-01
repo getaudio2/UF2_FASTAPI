@@ -2,10 +2,17 @@
 
 ## Inserció de dades d'un CSV a una base de dades postgresql
 Amb la llibreria "pandas" llegim els continguts de l'arxiu .csv amb les paraules per temàtica del penjat.
+
 ![cap1](cap1.png)
+
 El mètode read_csv ens retorna un dataframe (Serie de Series). Per poder enviar-ho a la base de dades
 l'hem de convertir en un diccionari. Anirem iterant cada fila de les columnes WORD i THEME, fent tants inserts com paraules hi hagin.
+
 ![cap2](cap2.png)
+
+Cal fixar-nos que on diu `data["WORD"][pos]` no estem iterant un array de dues dimensions, sinó que iterem
+un diccionari de dues columnes on cada columna té un sol array unidimensional. Llavors, la crida amb el primer
+valor `["WORD"]` fa referència a la columna word `{ WORD: ['Software', ...] }`, i `[pos]` la posició a l'array 1D amb les paraules.
 ![cap3](cap3.png)
 ![cap4](cap4.png)
 
