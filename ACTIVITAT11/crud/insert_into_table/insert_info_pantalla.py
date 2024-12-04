@@ -1,4 +1,4 @@
-from connection import create_connection
+from db_connection.connection import create_connection
 
 
 def insert_info_pantalla():

@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-import get_info_pantalla
-import get_hangman
+from crud.get_from_table import get_hangman, get_info_pantalla
 
 app = FastAPI()
 

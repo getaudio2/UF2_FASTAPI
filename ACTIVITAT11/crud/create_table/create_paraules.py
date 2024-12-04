@@ -1,9 +1,9 @@
 import psycopg2 as pg
-from connection import create_connection
+from db_connection.connection import create_connection
 
 # Executar per crear la taula o crear-la directament al pgadmin
 # (Crida de la funció a sota d'aquest fitxer)
-def create_table():
+def create_table_paraules():
     try:
         # Agafem la conexió a la BBDD de connection.py
         conn = create_connection()
@@ -26,4 +26,4 @@ def create_table():
         # Tanquem la connexió a la base de dades
         conn.close()
 
-create_table() # Crida de la funció
+create_table_paraules() # Crida de la funció
