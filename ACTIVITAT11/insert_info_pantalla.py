@@ -1,4 +1,3 @@
-import pandas as pd
 from connection import create_connection
 
 
