@@ -11,7 +11,7 @@ def insert_registre_joc():
                                         HIGHSCORE) 
                                         VALUES(%s, %s, %s, %s, %s);
     '''
-    values = (1,5,2,"2 (100%)", "2024-9-12 - 5 punts")
+    values = (2,8,2,"2 (100%)", "2024-9-12 - 8 punts")
 
     cur.execute(query, values)
     conn.commit()

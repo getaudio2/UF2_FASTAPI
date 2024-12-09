@@ -15,7 +15,7 @@ def get_usuari_game_data():
     '''
 
     cur.execute(query)
-    boto = cur.fetchone()
+    boto = cur.fetchall()
 
     cur.close()
     conn.close()
