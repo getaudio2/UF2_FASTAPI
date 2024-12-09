@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from crud.get_from_table import get_hangman, get_info_pantalla
+from crud.get_from_table import get_hangman, get_info_pantalla, get_usuari_joc_data
+from crud.get_from_table.get_usuari_joc_data import get_usuari_game_data
 
 app = FastAPI()
 
@@ -27,3 +28,7 @@ async def get_hangman_img():
 @app.get("/abecedari", response_model=str)
 async def get_abecedari():
     return get_info_pantalla.get_abecedari()
+
+@app.get("/usuari", response_model=list)
+async def get_usuari_info():
+    return get_usuari_game_data()
