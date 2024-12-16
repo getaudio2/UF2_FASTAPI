@@ -1,12 +1,11 @@
 from db_connection.connection import create_connection
 
-
-def insert_usuari():
+def insert_usuari(username, password):
     conn = create_connection()
     cur = conn.cursor()
 
     query = "INSERT INTO USUARIS(USERNAME, PASSWORD) VALUES(%s, %s);"
-    values = ("Jugador 2", "admin")
+    values = (username, password)
 
     cur.execute(query, values)
     conn.commit()
@@ -15,5 +14,3 @@ def insert_usuari():
     conn.close()
 
     return {"Message":"Data inserted correctly"}
-
-insert_usuari()
