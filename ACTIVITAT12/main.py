@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from crud.get_from_table import get_hangman, get_info_pantalla, get_usuari_joc_data
 from crud.insert_into_table import insert_usuari, insert_registre_joc, insert_hangman, insert_info_pantalla
+from crud.update_table import update_registre_joc, update_hangman
+from crud.delete_from_table import delete_usuari
 from schema.usuari_schema import usuaris_schema
 
 app = FastAPI()
@@ -32,17 +34,29 @@ class ParaulaSecreta(BaseModel):
 class Hangman(BaseModel):
     img: str
 
-@app.put("/hangman")
-async def update_hangman_img(hangman: Hangman):
-    return insert_hangman.insert_hangman_img(hangman.img)
+@app.delete("/delete_user")
+async def delete_user_by_id(id: int):
+    return delete_usuari.delete_usuari(id)
+
+@app.put("/put_hangman")
+async def put_hangman_img(hangman: Hangman):
+    return update_hangman.update_hangman_img(hangman.img)
 
 @app.put("/put_info_pantalla")
-async def update_paraula_secreta(paraulaSecreta: ParaulaSecreta):
+async def put_paraula_secreta(paraulaSecreta: ParaulaSecreta):
     return paraulaSecreta.paraula
 
 @app.put("/put_registre_joc")
-async def update_registre_joc(registreJoc: RegistreJoc):
-    return insert_registre_joc.insert_registre_joc(registreJoc.usuari_id, registreJoc.punts_actuals, registreJoc.total_partides, registreJoc.partides_guanyades, registreJoc.highscore)
+async def put_registre_joc(registreJoc: RegistreJoc):
+    return update_registre_joc.update_registre_joc(registreJoc.usuari_id, registreJoc.punts_actuals, registreJoc.total_partides, registreJoc.partides_guanyades, registreJoc.highscore)
+
+@app.post("/post_hangman")
+async def create_hangman(hangman: Hangman):
+    return insert_hangman.insert_hangman_img(hangman.img)
+
+@app.post("/post_registre_joc")
+async def create_registre_joc(registreJoc: RegistreJoc):
+    return insert_registre_joc.insert_registre_joc(registreJoc.usuari_id)
 
 @app.post("/post_usuari/")
 async def create_usuari(usuari: Usuari):

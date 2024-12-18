@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fe9c8be-a2cd-4b8d-b07b-89b499ae49fe" name="Changes" comment="Added endpoint to insert new users into table usuaris">
-      <change beforePath="$PROJECT_DIR$/../ACTIVITAT11/.idea/ACTIVITAT11.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ACTIVITAT11.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/delete_from_table/delete_usuari.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/update_table/update_hangman.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/update_table/update_registre_joc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_info_pantalla.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_info_pantalla.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -43,6 +44,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2qJ0Ii3BUvBysG9042qseWjcshS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

@@ -1,10 +1,11 @@
 from db_connection.connection import create_connection
 
-def insert_hangman_img(imgUrl):
+
+def update_hangman_img(imgUrl):
     conn = create_connection()
     cur = conn.cursor()
 
-    query = "INSERT INTO HANGMAN(HANGMAN_IMG) VALUES(%s);"
+    query = "UPDATE HANGMAN SET HANGMAN_IMG = %s;"
     values = (imgUrl,)
 
     cur.execute(query, values)
