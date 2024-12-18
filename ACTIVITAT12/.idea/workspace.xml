@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fe9c8be-a2cd-4b8d-b07b-89b499ae49fe" name="Changes" comment="Added endpoint to insert new users into table usuaris">
+      <change beforePath="$PROJECT_DIR$/../ACTIVITAT11/.idea/ACTIVITAT11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ACTIVITAT11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_info_pantalla.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_info_pantalla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;getaudio2&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/getaudio2/UF2_FASTAPI.git&quot;,
+    &quot;accountId&quot;: &quot;bdf8b723-639a-44e6-b392-8c713c552fcd&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2qJ0Ii3BUvBysG9042qseWjcshS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.create_hangman.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_info_pantalla.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_paraules.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_registre_joc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_usuari.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_hangman.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_info_pantalla.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_registre_joc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_usuari.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;activitat__12&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/paul/Escritorio/UF2_FASTAPI/UF2_FASTAPI/ACTIVITAT12&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/db_connection" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fe9c8be-a2cd-4b8d-b07b-89b499ae49fe" name="Changes" comment="" />
+      <created>1734365292986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734365292986</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added endpoint to insert new users into table usuaris">
+      <option name="closed" value="true" />
+      <created>1734372227667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734372227667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added endpoint to insert new users into table usuaris" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added endpoint to insert new users into table usuaris" />
+  </component>
+</project>

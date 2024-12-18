@@ -1,24 +1,22 @@
 from db_connection.connection import create_connection
 
-def insert_registre_joc():
+def insert_registre_joc(id, punts, totalPartides, partidesGuanyades, highscore):
     conn = create_connection()
     cur = conn.cursor()
 
-    query = '''INSERT INTO REGISTRE_JOC(USUARI_ID, 
-                                        PUNTS_ACTUALS, 
-                                        TOTAL_PARTIDES, 
-                                        PARTIDES_GUANYADES, 
-                                        HIGHSCORE) 
-                                        VALUES(%s, %s, %s, %s, %s);
+    query = '''UPDATE REGISTRE_JOC
+                SET PUNTS_ACTUALS = %s, TOTAL_PARTIDES = %s, 
+                    PARTIDES_GUANYADES = %s, HIGHSCORE = %s
+                WHERE USUARI_ID = %s;
     '''
-    values = (2,8,2,"2 (100%)", "2024-9-12 - 8 punts")
+    values = (punts,totalPartides,partidesGuanyades, highscore, id)
 
     cur.execute(query, values)
     conn.commit()
 
+    updated_rows = cur.rowcount
+
     cur.close()
     conn.close()
 
-    return {"Message":"Data inserted correctly"}
-
-insert_registre_joc()
+    return {"Rows updated": updated_rows}

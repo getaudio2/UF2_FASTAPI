@@ -15,5 +15,3 @@ def insert_info_pantalla():
     conn.close()
 
     return {"Message":"Data inserted correctly"}
-
-insert_info_pantalla()
