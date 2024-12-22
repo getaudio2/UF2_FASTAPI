@@ -18,6 +18,7 @@ def create_table_registre_joc():
                         CONSTRAINT fk_usuari 
                             FOREIGN KEY(USUARI_ID) 
                             REFERENCES USUARIS(ID)
+                            ON DELETE CASCADE
         )'''
 
         # Enviem la query per crear la taula USERS

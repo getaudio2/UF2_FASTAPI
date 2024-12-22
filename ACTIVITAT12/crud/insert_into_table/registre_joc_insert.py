@@ -13,11 +13,14 @@ def insert_registre_joc(usuari_id):
                                             HIGHSCORE) 
                                             VALUES(%s, %s, %s, %s, %s);
         '''
-        values = (usuari_id,8,2,"2 (100%)", "2024-9-12 - 8 punts")
+        # Com que es tracta del primer insert, aquestes dades haurien de ser les inicials
+        # "Id d'usuari", 0, 0, "0 (0%)", "Sense highscore"
+        values = (usuari_id,8,2,"2 (100%)", "2024-9-12 - 8 punts") # Dades d'exemple
 
         cur.execute(query, values)
         conn.commit()
 
+        # Comprovem les rows alterades per saber si s'ha inserit correctament
         updated_rows = cur.rowcount
 
         cur.close()

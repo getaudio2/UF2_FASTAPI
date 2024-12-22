@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fe9c8be-a2cd-4b8d-b07b-89b499ae49fe" name="Changes" comment="Added endpoint to insert new users into table usuaris">
-      <change afterPath="$PROJECT_DIR$/crud/delete_from_table/delete_usuari.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/update_table/update_hangman.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/update_table/update_registre_joc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/update_table/paraula_secreta_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/create_table/create_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/create_table/create_registre_joc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/delete_from_table/delete_usuari.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/delete_from_table/usuari_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/get_from_table/get_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/get_from_table/hangman_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/get_from_table/get_info_pantalla.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/get_from_table/info_pantalla_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/get_from_table/get_usuari_joc_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/get_from_table/usuari_joc_data_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/hangman_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_info_pantalla.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/info_pantalla_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/registre_joc_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/insert_into_table/insert_usuari.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/insert_into_table/usuari_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/update_table/update_hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/update_table/hangman_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/update_table/update_registre_joc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/update_table/registre_joc_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

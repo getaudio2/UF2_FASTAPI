@@ -6,6 +6,8 @@ def update_registre_joc(id, punts, totalPartides, partidesGuanyades, highscore):
         conn = create_connection()
         cur = conn.cursor()
 
+        # Aquesta query ens permet actualitzar les dades del jugador
+        # cada cop que guanya punts o la partida. Fem servir BaseModel
         query = '''UPDATE REGISTRE_JOC
                     SET PUNTS_ACTUALS = %s, TOTAL_PARTIDES = %s, 
                         PARTIDES_GUANYADES = %s, HIGHSCORE = %s
@@ -16,6 +18,7 @@ def update_registre_joc(id, punts, totalPartides, partidesGuanyades, highscore):
         cur.execute(query, values)
         conn.commit()
 
+        # Comprovem les rows alterades per saber si l'update s'ha fet correctament
         updated_rows = cur.rowcount
 
         cur.close()

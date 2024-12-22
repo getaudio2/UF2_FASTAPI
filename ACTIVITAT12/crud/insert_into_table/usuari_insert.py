@@ -4,6 +4,7 @@ def insert_usuari(username, password):
     conn = create_connection()
     cur = conn.cursor()
 
+    # Inserim l'usuari creat amb login
     query = "INSERT INTO USUARIS(USERNAME, PASSWORD) VALUES(%s, %s);"
     values = (username, password)
 
