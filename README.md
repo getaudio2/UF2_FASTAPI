@@ -1,4 +1,24 @@
 # UF2_FASTAPI
+## Activitat 12
+**EL CODI ACTUALITZAT PER L'ACTIVITAT 12 ES TROBA NOMÉS A LA CARPETA ACTIVITAT12.**
+
+**LA CARPETA ACTIVITAT11 NOMÉS CONTÉ CODI DE L'ACTIVITAT ANTERIOR.**
+
+Per aquesta activitat 12, es demana terminar el CRUD de les taules dissenyades al model relacional, i els respectius endpoints.
+
+Hi ha 5 carpetes dins de la carpeta "crud" amb els arxius per crear les taules, consultes select, insert, update i delete.
+
+La decisió a l'hora de pensar si era necessari la consulta o l'endpoint per cada taula o columna a la BBDD la vaig organitzar mitjançant el següent esquema:
+
+| Taules/Columns | GET | POST | PUT | DELETE |
+| --- | --- | --- | --- | --- |
+| BotoInici | [X] | [_] | [_] | [_] |
+| Abecedari | [X] | [_] | [_] | [_] |
+| ParaulaSecreta | [X] | [X] | [X] | [_] |
+| PARAULES | [X] | [_] | [_] | [_] |
+| USUARI | [X] | [X] | [X] | [X] |
+| REGISTRE_JOC | [X] | [X] | [X] | [X] |
+| HANGMAN | [X] | [X] | [X] | [_] |
 
 ## Disseny DB
 ![cap1](cap1.png)
